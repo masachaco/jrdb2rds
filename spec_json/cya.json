@@ -1,0 +1,152 @@
+[
+  {
+    "name": "場コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "1"
+  },
+  {
+    "name": "年",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "3"
+  },
+  {
+    "name": "回",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "5"
+  },
+  {
+    "name": "日",
+    "byte": "1",
+    "type": "F",
+    "ref_index": "6"
+  },
+  {
+    "name": "Ｒ",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "7"
+  },
+  {
+    "name": "馬番",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "9"
+  },
+  {
+    "name": "調教タイプ",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "11"
+  },
+  {
+    "name": "調教コース種別",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "13"
+  },
+  {
+    "name": "坂",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "14"
+  },
+  {
+    "name": "Ｗ",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "16"
+  },
+  {
+    "name": "ダ",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "18"
+  },
+  {
+    "name": "芝",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "20"
+  },
+  {
+    "name": "プ",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "22"
+  },
+  {
+    "name": "障",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "24"
+  },
+  {
+    "name": "調教距離",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "26"
+  },
+  {
+    "name": "調教重点",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "27"
+  },
+  {
+    "name": "追切指数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "28"
+  },
+  {
+    "name": "仕上指数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "31"
+  },
+  {
+    "name": "調教量評価",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "34"
+  },
+  {
+    "name": "仕上指数変化",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "35"
+  },
+  {
+    "name": "調教コメント",
+    "byte": "40",
+    "type": "X",
+    "ref_index": "36"
+  },
+  {
+    "name": "コメント年月日",
+    "byte": "8",
+    "type": "X",
+    "ref_index": "76"
+  },
+  {
+    "name": "調教評価",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "84"
+  },
+  {
+    "name": "予備",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "85"
+  },
+  {
+    "name": "改行",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "87"
+  }
+]

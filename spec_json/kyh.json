@@ -1,0 +1,770 @@
+[
+  {
+    "name": "場コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "1"
+  },
+  {
+    "name": "年",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "3"
+  },
+  {
+    "name": "回",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "5"
+  },
+  {
+    "name": "日",
+    "byte": "1",
+    "type": "F",
+    "ref_index": "6"
+  },
+  {
+    "name": "Ｒ",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "7"
+  },
+  {
+    "name": "馬番",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "9"
+  },
+  {
+    "name": "血統登録番号",
+    "byte": "8",
+    "type": "X",
+    "ref_index": "11"
+  },
+  {
+    "name": "馬名",
+    "byte": "36",
+    "type": "X",
+    "ref_index": "19"
+  },
+  {
+    "name": "ＩＤＭ",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "55"
+  },
+  {
+    "name": "騎手指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "60"
+  },
+  {
+    "name": "情報指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "65"
+  },
+  {
+    "name": "予備１",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "70"
+  },
+  {
+    "name": "予備２",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "75"
+  },
+  {
+    "name": "予備３",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "80"
+  },
+  {
+    "name": "総合指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "85"
+  },
+  {
+    "name": "脚質",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "90"
+  },
+  {
+    "name": "距離適性",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "91"
+  },
+  {
+    "name": "上昇度",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "92"
+  },
+  {
+    "name": "ローテーション",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "93"
+  },
+  {
+    "name": "基準オッズ",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "96"
+  },
+  {
+    "name": "基準人気順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "101"
+  },
+  {
+    "name": "基準複勝オッズ",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "103"
+  },
+  {
+    "name": "基準複勝人気順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "108"
+  },
+  {
+    "name": "特定情報◎",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "110"
+  },
+  {
+    "name": "特定情報○",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "113"
+  },
+  {
+    "name": "特定情報▲",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "116"
+  },
+  {
+    "name": "特定情報△",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "119"
+  },
+  {
+    "name": "特定情報×",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "122"
+  },
+  {
+    "name": "総合情報◎",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "125"
+  },
+  {
+    "name": "総合情報○",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "128"
+  },
+  {
+    "name": "総合情報▲",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "131"
+  },
+  {
+    "name": "総合情報△",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "134"
+  },
+  {
+    "name": "総合情報×",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "137"
+  },
+  {
+    "name": "人気指数",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "140"
+  },
+  {
+    "name": "調教指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "145"
+  },
+  {
+    "name": "厩舎指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "150"
+  },
+  {
+    "name": "調教矢印コード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "155"
+  },
+  {
+    "name": "厩舎評価コード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "156"
+  },
+  {
+    "name": "騎手期待連対率",
+    "byte": "4",
+    "type": "Z9.9",
+    "ref_index": "157"
+  },
+  {
+    "name": "激走指数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "161"
+  },
+  {
+    "name": "蹄コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "164"
+  },
+  {
+    "name": "重適正コード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "166"
+  },
+  {
+    "name": "クラスコード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "167"
+  },
+  {
+    "name": "予備",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "169"
+  },
+  {
+    "name": "ブリンカー",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "171"
+  },
+  {
+    "name": "騎手名",
+    "byte": "12",
+    "type": "X",
+    "ref_index": "172"
+  },
+  {
+    "name": "負担重量",
+    "byte": "3",
+    "type": "999",
+    "ref_index": "184"
+  },
+  {
+    "name": "見習い区分",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "187"
+  },
+  {
+    "name": "調教師名",
+    "byte": "12",
+    "type": "X",
+    "ref_index": "188"
+  },
+  {
+    "name": "調教師所属",
+    "byte": "4",
+    "type": "X",
+    "ref_index": "200"
+  },
+  {
+    "name": "前走１競走成績キー",
+    "byte": "16",
+    "type": "9",
+    "ref_index": "204"
+  },
+  {
+    "name": "前走２競走成績キー",
+    "byte": "16",
+    "type": "9",
+    "ref_index": "220"
+  },
+  {
+    "name": "前走３競走成績キー",
+    "byte": "16",
+    "type": "9",
+    "ref_index": "236"
+  },
+  {
+    "name": "前走４競走成績キー",
+    "byte": "16",
+    "type": "9",
+    "ref_index": "252"
+  },
+  {
+    "name": "前走５競走成績キー",
+    "byte": "16",
+    "type": "9",
+    "ref_index": "268"
+  },
+  {
+    "name": "前走１レースキー",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "284"
+  },
+  {
+    "name": "前走２レースキー",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "292"
+  },
+  {
+    "name": "前走３レースキー",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "300"
+  },
+  {
+    "name": "前走４レースキー",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "308"
+  },
+  {
+    "name": "前走５レースキー",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "316"
+  },
+  {
+    "name": "枠番",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "324"
+  },
+  {
+    "name": "予備",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "325"
+  },
+  {
+    "name": "総合印",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "327"
+  },
+  {
+    "name": "ＩＤＭ印",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "328"
+  },
+  {
+    "name": "情報印",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "329"
+  },
+  {
+    "name": "騎手印",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "330"
+  },
+  {
+    "name": "厩舎印",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "331"
+  },
+  {
+    "name": "調教印",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "332"
+  },
+  {
+    "name": "激走印",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "333"
+  },
+  {
+    "name": "芝適性コード",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "334"
+  },
+  {
+    "name": "ダ適性コード",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "335"
+  },
+  {
+    "name": "騎手コード",
+    "byte": "5",
+    "type": "9",
+    "ref_index": "336"
+  },
+  {
+    "name": "調教師コード",
+    "byte": "5",
+    "type": "9",
+    "ref_index": "341"
+  },
+  {
+    "name": "予備",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "346"
+  },
+  {
+    "name": "獲得賞金",
+    "byte": "6",
+    "type": "ZZZZZ9",
+    "ref_index": "347"
+  },
+  {
+    "name": "収得賞金",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "353"
+  },
+  {
+    "name": "条件クラス",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "358"
+  },
+  {
+    "name": "テン指数",
+    "byte": "5",
+    "type": "ZZZ.9",
+    "ref_index": "359"
+  },
+  {
+    "name": "ペース指数",
+    "byte": "5",
+    "type": "ZZZ.9",
+    "ref_index": "364"
+  },
+  {
+    "name": "上がり指数",
+    "byte": "5",
+    "type": "ZZZ.9",
+    "ref_index": "369"
+  },
+  {
+    "name": "位置指数",
+    "byte": "5",
+    "type": "ZZZ.9",
+    "ref_index": "374"
+  },
+  {
+    "name": "ペース予想",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "379"
+  },
+  {
+    "name": "道中順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "380"
+  },
+  {
+    "name": "道中差",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "382"
+  },
+  {
+    "name": "道中内外",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "384"
+  },
+  {
+    "name": "後３Ｆ順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "385"
+  },
+  {
+    "name": "後３Ｆ差",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "387"
+  },
+  {
+    "name": "後３Ｆ内外",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "389"
+  },
+  {
+    "name": "ゴール順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "390"
+  },
+  {
+    "name": "ゴール差",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "392"
+  },
+  {
+    "name": "ゴール内外",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "394"
+  },
+  {
+    "name": "展開記号",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "395"
+  },
+  {
+    "name": "距離適性２",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "396"
+  },
+  {
+    "name": "枠確定馬体重",
+    "byte": "3",
+    "type": "999",
+    "ref_index": "397"
+  },
+  {
+    "name": "枠確定馬体重増減",
+    "byte": "3",
+    "type": "XZ9",
+    "ref_index": "400"
+  },
+  {
+    "name": "取消フラグ",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "403"
+  },
+  {
+    "name": "性別コード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "404"
+  },
+  {
+    "name": "馬主名",
+    "byte": "40",
+    "type": "X",
+    "ref_index": "405"
+  },
+  {
+    "name": "馬主会コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "445"
+  },
+  {
+    "name": "馬記号コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "447"
+  },
+  {
+    "name": "激走順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "449"
+  },
+  {
+    "name": "LS指数順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "451"
+  },
+  {
+    "name": "テン指数順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "453"
+  },
+  {
+    "name": "ペース指数順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "455"
+  },
+  {
+    "name": "上がり指数順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "457"
+  },
+  {
+    "name": "位置指数順位",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "459"
+  },
+  {
+    "name": "騎手期待単勝率",
+    "byte": "4",
+    "type": "Z9.9",
+    "ref_index": "461"
+  },
+  {
+    "name": "騎手期待３着内率",
+    "byte": "4",
+    "type": "Z9.9",
+    "ref_index": "465"
+  },
+  {
+    "name": "輸送区分",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "469"
+  },
+  {
+    "name": "走法",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "470"
+  },
+  {
+    "name": "体型",
+    "byte": "24",
+    "type": "X",
+    "ref_index": "478"
+  },
+  {
+    "name": "体型総合１",
+    "byte": "3",
+    "type": "9",
+    "ref_index": "502"
+  },
+  {
+    "name": "体型総合２",
+    "byte": "3",
+    "type": "9",
+    "ref_index": "505"
+  },
+  {
+    "name": "体型総合３",
+    "byte": "3",
+    "type": "9",
+    "ref_index": "508"
+  },
+  {
+    "name": "馬特記１",
+    "byte": "3",
+    "type": "9",
+    "ref_index": "511"
+  },
+  {
+    "name": "馬特記２",
+    "byte": "3",
+    "type": "9",
+    "ref_index": "514"
+  },
+  {
+    "name": "馬特記３",
+    "byte": "3",
+    "type": "9",
+    "ref_index": "517"
+  },
+  {
+    "name": "馬スタート指数",
+    "byte": "4",
+    "type": "Z9.9",
+    "ref_index": "520"
+  },
+  {
+    "name": "馬出遅率",
+    "byte": "4",
+    "type": "Z9.9",
+    "ref_index": "524"
+  },
+  {
+    "name": "参考前走",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "528"
+  },
+  {
+    "name": "参考前走騎手コード",
+    "byte": "5",
+    "type": "X",
+    "ref_index": "530"
+  },
+  {
+    "name": "万券指数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "535"
+  },
+  {
+    "name": "万券印",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "538"
+  },
+  {
+    "name": "降級フラグ",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "539"
+  },
+  {
+    "name": "激走タイプ",
+    "byte": "2",
+    "type": "XX",
+    "ref_index": "540"
+  },
+  {
+    "name": "休養理由分類コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "542"
+  },
+  {
+    "name": "予備",
+    "byte": "7",
+    "type": "X",
+    "ref_index": "544"
+  },
+  {
+    "name": "改行",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "551"
+  }
+]

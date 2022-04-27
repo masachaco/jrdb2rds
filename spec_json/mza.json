@@ -1,0 +1,20 @@
+[
+  {
+    "name": "血統登録番号",
+    "byte": "8",
+    "type": "X",
+    "ref_index": "1"
+  },
+  {
+    "name": "予備",
+    "byte": "6",
+    "type": "X",
+    "ref_index": "9"
+  },
+  {
+    "name": "改行",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "15"
+  }
+]

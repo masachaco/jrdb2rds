@@ -1,0 +1,134 @@
+[
+  {
+    "name": "血統登録番号",
+    "byte": "8",
+    "type": "X",
+    "ref_index": "1"
+  },
+  {
+    "name": "馬名",
+    "byte": "36",
+    "type": "X",
+    "ref_index": "9"
+  },
+  {
+    "name": "性別コード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "45"
+  },
+  {
+    "name": "毛色コード",
+    "byte": "2",
+    "type": "9",
+    "ref_index": "46"
+  },
+  {
+    "name": "馬記号コード",
+    "byte": "2",
+    "type": "9",
+    "ref_index": "48"
+  },
+  {
+    "name": "父馬名",
+    "byte": "36",
+    "type": "X",
+    "ref_index": "50"
+  },
+  {
+    "name": "母馬名",
+    "byte": "36",
+    "type": "X",
+    "ref_index": "86"
+  },
+  {
+    "name": "母父馬名",
+    "byte": "36",
+    "type": "X",
+    "ref_index": "122"
+  },
+  {
+    "name": "生年月日",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "158"
+  },
+  {
+    "name": "父馬生年",
+    "byte": "4",
+    "type": "9",
+    "ref_index": "166"
+  },
+  {
+    "name": "母馬生年",
+    "byte": "4",
+    "type": "9",
+    "ref_index": "170"
+  },
+  {
+    "name": "母父馬生年",
+    "byte": "4",
+    "type": "9",
+    "ref_index": "174"
+  },
+  {
+    "name": "馬主名",
+    "byte": "40",
+    "type": "X",
+    "ref_index": "178"
+  },
+  {
+    "name": "馬主会コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "218"
+  },
+  {
+    "name": "生産者名",
+    "byte": "40",
+    "type": "X",
+    "ref_index": "220"
+  },
+  {
+    "name": "産地名",
+    "byte": "8",
+    "type": "X",
+    "ref_index": "260"
+  },
+  {
+    "name": "登録抹消フラグ",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "268"
+  },
+  {
+    "name": "データ年月日",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "269"
+  },
+  {
+    "name": "父系統コード",
+    "byte": "4",
+    "type": "9",
+    "ref_index": "277"
+  },
+  {
+    "name": "母父系統コード",
+    "byte": "4",
+    "type": "9",
+    "ref_index": "281"
+  },
+  {
+    "name": "予備",
+    "byte": "6",
+    "type": "X",
+    "ref_index": "285"
+  },
+  {
+    "name": "改行",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "291"
+  }
+]

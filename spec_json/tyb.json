@@ -1,0 +1,206 @@
+[
+  {
+    "name": "場コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "1"
+  },
+  {
+    "name": "年",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "3"
+  },
+  {
+    "name": "回",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "5"
+  },
+  {
+    "name": "日",
+    "byte": "1",
+    "type": "F",
+    "ref_index": "6"
+  },
+  {
+    "name": "Ｒ",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "7"
+  },
+  {
+    "name": "馬番",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "9"
+  },
+  {
+    "name": "ＩＤＭ",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "11"
+  },
+  {
+    "name": "騎手指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "16"
+  },
+  {
+    "name": "情報指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "21"
+  },
+  {
+    "name": "オッズ指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "26"
+  },
+  {
+    "name": "パドック指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "31"
+  },
+  {
+    "name": "予備１",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "36"
+  },
+  {
+    "name": "総合指数",
+    "byte": "5",
+    "type": "ZZ9.9",
+    "ref_index": "41"
+  },
+  {
+    "name": "馬具変更情報",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "46"
+  },
+  {
+    "name": "脚元情報",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "47"
+  },
+  {
+    "name": "取消フラグ",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "48"
+  },
+  {
+    "name": "騎手コード",
+    "byte": "5",
+    "type": "9",
+    "ref_index": "49"
+  },
+  {
+    "name": "騎手名",
+    "byte": "12",
+    "type": "X",
+    "ref_index": "54"
+  },
+  {
+    "name": "負担重量",
+    "byte": "3",
+    "type": "999",
+    "ref_index": "66"
+  },
+  {
+    "name": "見習い区分",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "69"
+  },
+  {
+    "name": "馬場状態コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "70"
+  },
+  {
+    "name": "天候コード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "72"
+  },
+  {
+    "name": "単勝オッズ",
+    "byte": "6",
+    "type": "ZZZ9.9",
+    "ref_index": "73"
+  },
+  {
+    "name": "複勝オッズ",
+    "byte": "6",
+    "type": "ZZZ9.9",
+    "ref_index": "79"
+  },
+  {
+    "name": "オッズ取得時間",
+    "byte": "4",
+    "type": "9999",
+    "ref_index": "85"
+  },
+  {
+    "name": "馬体重",
+    "byte": "3",
+    "type": "999",
+    "ref_index": "89"
+  },
+  {
+    "name": "馬体重増減",
+    "byte": "3",
+    "type": "XZ9",
+    "ref_index": "92"
+  },
+  {
+    "name": "オッズ印",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "95"
+  },
+  {
+    "name": "パドック印",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "96"
+  },
+  {
+    "name": "直前総合印",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "97"
+  },
+  {
+    "name": "馬体コード",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "98"
+  },
+  {
+    "name": "気配コード",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "99"
+  },
+  {
+    "name": "予備",
+    "byte": "27",
+    "type": "X",
+    "ref_index": "100"
+  },
+  {
+    "name": "改行",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "127"
+  }
+]

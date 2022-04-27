@@ -1,0 +1,164 @@
+[
+  {
+    "name": "調教師コード",
+    "byte": "5",
+    "type": "99999",
+    "ref_index": "1"
+  },
+  {
+    "name": "登録抹消フラグ",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "6"
+  },
+  {
+    "name": "登録抹消年月日",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "7"
+  },
+  {
+    "name": "調教師名",
+    "byte": "12",
+    "type": "X",
+    "ref_index": "15"
+  },
+  {
+    "name": "調教師カナ",
+    "byte": "30",
+    "type": "X",
+    "ref_index": "27"
+  },
+  {
+    "name": "調教師名略称",
+    "byte": "6",
+    "type": "X",
+    "ref_index": "57"
+  },
+  {
+    "name": "所属コード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "63"
+  },
+  {
+    "name": "所属地域名",
+    "byte": "4",
+    "type": "X",
+    "ref_index": "64"
+  },
+  {
+    "name": "生年月日",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "68"
+  },
+  {
+    "name": "初免許年",
+    "byte": "4",
+    "type": "9",
+    "ref_index": "76"
+  },
+  {
+    "name": "調教師コメント",
+    "byte": "40",
+    "type": "X",
+    "ref_index": "80"
+  },
+  {
+    "name": "コメント入力年月日",
+    "byte": "8",
+    "type": "X",
+    "ref_index": "120"
+  },
+  {
+    "name": "本年リーディング",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "128"
+  },
+  {
+    "name": "本年平地成績",
+    "byte": "12",
+    "type": "ZZ9*4",
+    "ref_index": "131"
+  },
+  {
+    "name": "本年障害成績",
+    "byte": "12",
+    "type": "ZZ9*4",
+    "ref_index": "143"
+  },
+  {
+    "name": "本年特別勝数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "155"
+  },
+  {
+    "name": "本年重賞勝数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "158"
+  },
+  {
+    "name": "昨年リーディング",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "161"
+  },
+  {
+    "name": "昨年平地成績",
+    "byte": "12",
+    "type": "ZZ9*4",
+    "ref_index": "164"
+  },
+  {
+    "name": "昨年障害成績",
+    "byte": "12",
+    "type": "ZZ9*4",
+    "ref_index": "176"
+  },
+  {
+    "name": "昨年特別勝数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "188"
+  },
+  {
+    "name": "昨年重賞勝数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "191"
+  },
+  {
+    "name": "通算平地成績",
+    "byte": "20",
+    "type": "ZZZZ9*4",
+    "ref_index": "194"
+  },
+  {
+    "name": "通算障害成績",
+    "byte": "20",
+    "type": "ZZZZ9*4",
+    "ref_index": "214"
+  },
+  {
+    "name": "データ年月日",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "234"
+  },
+  {
+    "name": "予備",
+    "byte": "29",
+    "type": "X",
+    "ref_index": "242"
+  },
+  {
+    "name": "改行",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "271"
+  }
+]

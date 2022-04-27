@@ -1,0 +1,212 @@
+[
+  {
+    "name": "場コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "1"
+  },
+  {
+    "name": "年",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "3"
+  },
+  {
+    "name": "回",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "5"
+  },
+  {
+    "name": "日",
+    "byte": "1",
+    "type": "F",
+    "ref_index": "6"
+  },
+  {
+    "name": "Ｒ",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "7"
+  },
+  {
+    "name": "年月日",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "9"
+  },
+  {
+    "name": "発走時間",
+    "byte": "4",
+    "type": "X",
+    "ref_index": "17"
+  },
+  {
+    "name": "距離",
+    "byte": "4",
+    "type": "9999",
+    "ref_index": "21"
+  },
+  {
+    "name": "芝ダ障害コード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "25"
+  },
+  {
+    "name": "右左",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "26"
+  },
+  {
+    "name": "内外",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "27"
+  },
+  {
+    "name": "種別",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "28"
+  },
+  {
+    "name": "条件",
+    "byte": "2",
+    "type": "XX",
+    "ref_index": "30"
+  },
+  {
+    "name": "記号",
+    "byte": "3",
+    "type": "999",
+    "ref_index": "32"
+  },
+  {
+    "name": "重量",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "35"
+  },
+  {
+    "name": "グレード",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "36"
+  },
+  {
+    "name": "レース名",
+    "byte": "50",
+    "type": "X",
+    "ref_index": "37"
+  },
+  {
+    "name": "回数",
+    "byte": "8",
+    "type": "X",
+    "ref_index": "87"
+  },
+  {
+    "name": "頭数",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "95"
+  },
+  {
+    "name": "コース",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "97"
+  },
+  {
+    "name": "開催区分",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "98"
+  },
+  {
+    "name": "レース名短縮",
+    "byte": "8",
+    "type": "X",
+    "ref_index": "99"
+  },
+  {
+    "name": "レース名９文字",
+    "byte": "18",
+    "type": "X",
+    "ref_index": "107"
+  },
+  {
+    "name": "データ区分",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "125"
+  },
+  {
+    "name": "１着賞金",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "126"
+  },
+  {
+    "name": "２着賞金",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "131"
+  },
+  {
+    "name": "３着賞金",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "136"
+  },
+  {
+    "name": "４着賞金",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "141"
+  },
+  {
+    "name": "５着賞金",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "146"
+  },
+  {
+    "name": "１着算入賞金",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "151"
+  },
+  {
+    "name": "２着算入賞金",
+    "byte": "5",
+    "type": "ZZZZ9",
+    "ref_index": "156"
+  },
+  {
+    "name": "馬券発売フラグ",
+    "byte": "16",
+    "type": "9",
+    "ref_index": "161"
+  },
+  {
+    "name": "WIN5フラグ",
+    "byte": "1",
+    "type": "Z",
+    "ref_index": "177"
+  },
+  {
+    "name": "予備",
+    "byte": "5",
+    "type": "X",
+    "ref_index": "178"
+  },
+  {
+    "name": "改行",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "183"
+  }
+]

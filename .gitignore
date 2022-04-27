@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+spec/*.csv
+trimed_spec/*.txt
+spec_csv/*.txt
+test_input/*.txt
+
 # Distribution / packaging
 .Python
 build/

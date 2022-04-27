@@ -1,0 +1,164 @@
+[
+  {
+    "name": "場コード",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "1"
+  },
+  {
+    "name": "年",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "3"
+  },
+  {
+    "name": "回",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "5"
+  },
+  {
+    "name": "日",
+    "byte": "1",
+    "type": "F",
+    "ref_index": "6"
+  },
+  {
+    "name": "Ｒ",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "7"
+  },
+  {
+    "name": "馬番",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "9"
+  },
+  {
+    "name": "曜日",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "11"
+  },
+  {
+    "name": "調教年月日",
+    "byte": "8",
+    "type": "9",
+    "ref_index": "13"
+  },
+  {
+    "name": "回数",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "21"
+  },
+  {
+    "name": "調教コースコード",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "22"
+  },
+  {
+    "name": "追切種類",
+    "byte": "1",
+    "type": "99",
+    "ref_index": "24"
+  },
+  {
+    "name": "追い状態",
+    "byte": "2",
+    "type": "99",
+    "ref_index": "25"
+  },
+  {
+    "name": "乗り役",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "27"
+  },
+  {
+    "name": "調教Ｆ",
+    "byte": "1",
+    "type": "9",
+    "ref_index": "28"
+  },
+  {
+    "name": "テンＦ",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "29"
+  },
+  {
+    "name": "中間Ｆ",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "32"
+  },
+  {
+    "name": "終いＦ",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "35"
+  },
+  {
+    "name": "テンＦ指数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "38"
+  },
+  {
+    "name": "中間Ｆ指数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "41"
+  },
+  {
+    "name": "終いＦ指数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "44"
+  },
+  {
+    "name": "追切指数",
+    "byte": "3",
+    "type": "ZZ9",
+    "ref_index": "47"
+  },
+  {
+    "name": "併せ結果",
+    "byte": "1",
+    "type": "X",
+    "ref_index": "50"
+  },
+  {
+    "name": "追切種類",
+    "byte": "1",
+    "type": "99",
+    "ref_index": "51"
+  },
+  {
+    "name": "年齢",
+    "byte": "2",
+    "type": "Z9",
+    "ref_index": "52"
+  },
+  {
+    "name": "クラス",
+    "byte": "2",
+    "type": "XX",
+    "ref_index": "54"
+  },
+  {
+    "name": "予備",
+    "byte": "7",
+    "type": "X",
+    "ref_index": "56"
+  },
+  {
+    "name": "改行",
+    "byte": "2",
+    "type": "X",
+    "ref_index": "63"
+  }
+]
