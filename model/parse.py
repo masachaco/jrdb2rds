@@ -2,6 +2,8 @@ import unicodedata
 from ast import Pass
 import json, csv
 
+from regex import P
+
 
 def read_file(path,encode=None):
     try:
@@ -19,6 +21,7 @@ def read_file(path,encode=None):
 
 
 def parse(load_file_path, model_name):
+    print(load_file_path)
     data = read_file(load_file_path, "shift-jis").split("\n")
     model = json.loads(read_file(f"./spec_json/{model_name}.json"))
     result = []
@@ -59,10 +62,12 @@ def insert_data(cur, load_data, model_name):
     schedules = json.loads(read_file("./resource/schedule.json", "utf-8"))
     model = json.loads(read_file(f"./spec_json/{model_name}.json"))
     col_names = []
+    
     for col in model:
         col_names.append(col['name'])
     
     insert_data = []
+    counter=0
     for data in load_data:
         day = int("0x"+data["日"],0)
         year = int(data["年"])
@@ -73,6 +78,12 @@ def insert_data(cur, load_data, model_name):
             continue
 
         schedule = schedules[schedule_id]
+        if counter==0:
+            kaisai_nen = schedule["kaisai_nen"]
+            kaisai_tsukihi = schedule["kaisai_tsuki"] + schedule["kaisai_hi"]
+            print("削除tyb:", kaisai_nen, kaisai_tsukihi)
+            cur.execute(f"DELETE FROM public.jrdb_{model_name} WHERE kaisai_nen = '{kaisai_nen}' and kaisai_tsukihi = '{kaisai_tsukihi}'")
+        counter=counter+1
         records = [
             "'" + data["場コード"] + "'",
             "'" + schedule["kaisai_nen"] + "'",
@@ -84,8 +95,6 @@ def insert_data(cur, load_data, model_name):
             records.append("'" + data[name] + "'")
         insert_data.append("(" + ",".join(records) + ")")
     
-    sql = f"""delete from public.jrdb_{model_name} where  kaisai_nen = '2022' and kaisai_tsukihi = '0424';"""
-    cur.execute(sql)
     sql = f'''
         INSERT INTO 
             public.jrdb_{model_name}

@@ -3,7 +3,11 @@ rm ./test_input/*
 rm ./tmp/*
 cd tmp
 
-wget --http-user=22027075 --http-passwd=21224577 http://www.jrdb.com/member/20220424/tyokuzen/TYB220424.zip
+# 両方持ってきて
+# ↓cp932にしてね
+# wget --http-user=22027075 --http-passwd=21224577 http://www.jrdb.com/member/datazip/Kab/2022/KAB220529.zip
+# wget --http-user=22027075 --http-passwd=21224577 http://www.jrdb.com/member/datazip/Kyi/2022/KYI220529.zip
+wget --http-user=22027075 --http-passwd=21224577 http://www.jrdb.com/member/datazip/Tyb/2022/TYB220528.zip
 unzip *.zip
 rm SRB*.txt
 rm *_t.txt
@@ -11,6 +15,7 @@ mv *.txt ../test_input/
 rm *.zip
 cd ../
 python3 main.py
+
 # wget --http-user=22027075 --http-passwd=21224577 http://www.jrdb.com/member/datazip/Sed/2022/SED220409.zip
 # unzip *.zip
 # rm SRB*.txt
