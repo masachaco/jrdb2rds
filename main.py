@@ -45,15 +45,20 @@ def execute_command(command):
 
 def main():
     files = os.listdir("./test_input")
-    model_type = "tyb"
+    # model_type = "tyb"
+    # encode = "cp932"
+    model_type = input()
+    encode = input()
+    # レース単位ではなく、開催単位のデータの場合はtrue。レース単位の場合はfalse。
+    isSchedule = True if input() == "true" else False
+    
     data = []
     for file in files:
-        print(file)
-        data.extend(ps.parse(f"./test_input/{file}", model_type))
+        print("file:",file)
+        data.extend(ps.parse(f"./test_input/{file}", model_type, encode))
 
-    print("data loaded.")
     with get_connection() as conn:
         with conn.cursor(cursor_factory=DictCursor) as cur:
-            ps.create_table(cur, model_type)
-            ps.insert_data(cur, data, model_type)
+            ps.create_table(cur, model_type, isSchedule)
+            ps.insert_data(cur, data, model_type, isSchedule)
 main()
