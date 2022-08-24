@@ -10,7 +10,7 @@ spec/*.csv
 trimed_spec/*.txt
 spec_csv/*.txt
 test_input/*.txt
-zip/*
+zip/*/*.zip
 # Distribution / packaging
 .Python
 build/
