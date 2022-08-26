@@ -33,7 +33,6 @@ def get_host():
     )
     os_distri = str(os_distri.decode()).replace("\n", "").strip()
     if os_distri.strip() == "Ubuntu":
-        print("is Ubuntu")
         db_host, stderr_data = execute_command(
             "ip route | grep 'default via' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
         )
@@ -43,8 +42,6 @@ def get_host():
 def get_connection():
     # DBの接続先IPが毎回変わるので取得する
     host = get_host()
-    print("host:",host)
-    exit(0)
     db_url = (
         "postgresql://postgres:keibadb@"
         + host
@@ -62,7 +59,6 @@ def get_engine():
         'port': 5432,
         'database': 'pckeiba'
     }
-    print(connection_config)
     return create_engine('postgresql://{user}:{password}@{host}:{port}/{database}'.format(**connection_config))
 
 
@@ -88,7 +84,6 @@ def main(cur):
 
 
 if __name__ == "__main__":
-    print("start")
     with get_connection() as conn:
         with conn.cursor(cursor_factory=DictCursor) as cur:
             main(cur)

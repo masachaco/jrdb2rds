@@ -30,7 +30,6 @@ def get_host():
             "ip route | grep 'default via' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
         )
         host = db_host.decode().replace("\n", "")
-    print(host)
     return host
 
 def get_connection():
