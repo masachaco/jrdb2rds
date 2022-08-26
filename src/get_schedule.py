@@ -38,13 +38,13 @@ def get_host():
             "ip route | grep 'default via' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
         )
         host = db_host.decode().replace("\n", "")
-    print(host)
-    exit(0)
     return host
 
 def get_connection():
     # DBの接続先IPが毎回変わるので取得する
     host = get_host()
+    print("host:",host)
+    exit(0)
     db_url = (
         "postgresql://postgres:keibadb@"
         + host
