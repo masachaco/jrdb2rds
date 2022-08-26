@@ -33,6 +33,7 @@ def get_host():
     )
     os_distri = str(os_distri.decode()).replace("\n", "").strip()
     if os_distri.strip() == "Ubuntu":
+        print("is Ubuntu")
         db_host, stderr_data = execute_command(
             "ip route | grep 'default via' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
         )
