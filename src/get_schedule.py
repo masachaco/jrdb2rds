@@ -26,17 +26,43 @@ def execute_command(command):
     return proc.communicate()  # 処理実行を待つ(†1)
 
 
+def get_host():
+    host = "10.174.0.2"
+    os_distri, stderr_data = execute_command(
+        " more /etc/os-release|grep Ubuntu -o |uniq"
+    )
+    os_distri = str(os_distri.decode()).replace("\n", "").strip()
+    if os_distri.strip() == "Ubuntu":
+        db_host, stderr_data = execute_command(
+            "ip route | grep 'default via' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
+        )
+        host = db_host.decode().replace("\n", "")
+    print(host)
+    return host
+
 def get_connection():
     # DBの接続先IPが毎回変わるので取得する
-    db_host, stderr_data = execute_command(
-        "ip route | grep 'default via' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
-    )
+    host = get_host()
     db_url = (
         "postgresql://postgres:keibadb@"
-        + db_host.decode().replace("\n", "")
+        + host
         + ":5432/pckeiba"
     )
     return psycopg2.connect(db_url)
+
+def get_engine():
+
+    host = get_host()
+    connection_config = {
+        'user': 'postgres',
+        'password': 'keibadb',
+        'host': host,
+        'port': 5432,
+        'database': 'pckeiba'
+    }
+    print(connection_config)
+    return create_engine('postgresql://{user}:{password}@{host}:{port}/{database}'.format(**connection_config))
+
 
 
 def get_race_schedule(cur):

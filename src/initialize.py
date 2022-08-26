@@ -10,6 +10,24 @@ import os
 import glob
 import shutil
 import time
+
+def execute_command(command):
+    proc = subprocess.Popen(
+        command,
+        shell=True,  # シェル経由($ sh -c "command")で実行。
+        stdin=subprocess.PIPE,  # 1
+        stdout=subprocess.PIPE,  # 2
+        stderr=subprocess.PIPE,
+    )  # 3
+    return proc.communicate()  # 処理実行を待つ(†1)
+def get_basepath():
+    base_path, stderr_data = execute_command(
+        "cd ~/;pwd"
+    )
+    base_path = str(base_path.decode()).replace("\n", "").strip()
+    return base_path
+    
+BASE_PATH=get_basepath()
 def cleanup_dir(path,wild_card):
     for filename in  glob.glob(path+wild_card):
         if os.path.exists(path=filename):
@@ -49,27 +67,27 @@ def download_zip(zip_url,file_type,current_year):
     user = '22027075'
     password = '21224577'
     file_name = zip_url.split("/")[-1]
-    if not os.path.exists(path=f"./zip/{file_type}/{file_name}"):
+    if not os.path.exists(path=f"{BASE_PATH}/Projects/keiba-util4/jrdb2rds/zip/{file_type}/{file_name}"):
         if not (file_name.startswith(f"{file_type.upper()}{current_year[2:4]}") or file_name.startswith(f"{file_type.upper()}_")):
             print("対象外データです", file_name)
             return
         print("Downloading:", zip_url)
         urlData = requests.get(zip_url,auth=HTTPBasicAuth(user, password)).content
-        with open(f"./zip/{file_type}/{file_name}" ,mode='wb') as f:
+        with open(f"{BASE_PATH}/Projects/keiba-util4/jrdb2rds/zip/{file_type}/{file_name}" ,mode='wb') as f:
             f.write(urlData)
 
-    shutil.copy(f"./zip/{file_type}/{file_name}","./tmp/")
+    shutil.copy(f"{BASE_PATH}/Projects/keiba-util4/jrdb2rds/zip/{file_type}/{file_name}",f"{BASE_PATH}/Projects/keiba-util4/jrdb2rds/tmp/")
 
 def cleanup():
-    cleanup_dir('./test_input/',"*")
-    cleanup_dir('./tmp/',"*")
+    cleanup_dir(f'{BASE_PATH}/Projects/keiba-util4/jrdb2rds/test_input/',"*")
+    cleanup_dir(f'{BASE_PATH}/Projects/keiba-util4/jrdb2rds/tmp/',"*")
 
 def insert_data_to_db(file_type, file_encode, isSchedule):
-    subprocess.run(['unzip','./tmp/*.zip','-d','./tmp/'])
-    cleanup_dir('./tmp/',"SRB*.txt")
-    cleanup_dir('./tmp/',"*_t.txt")
-    move("./tmp/","*.txt", "./test_input/")
-    cleanup_dir('./tmp/',"*.zip")
+    subprocess.run(['unzip',f'{BASE_PATH}/Projects/keiba-util4/jrdb2rds/tmp/*.zip','-d',f'{BASE_PATH}/Projects/keiba-util4/jrdb2rds/tmp/'])
+    cleanup_dir(f'{BASE_PATH}/Projects/keiba-util4/jrdb2rds/tmp/',"SRB*.txt")
+    cleanup_dir(f'{BASE_PATH}/Projects/keiba-util4/jrdb2rds/tmp/',"*_t.txt")
+    move(f"{BASE_PATH}/Projects/keiba-util4/jrdb2rds/tmp/","*.txt", f"{BASE_PATH}/Projects/keiba-util4/jrdb2rds/test_input/")
+    cleanup_dir(f'{BASE_PATH}/Projects/keiba-util4/jrdb2rds/tmp/',"*.zip")
     subprocess.call(f'echo "{str(file_type).lower()}\n{file_encode}\n{isSchedule}\n" | python3 main.py',shell=True)
 
 def main():
