@@ -47,6 +47,7 @@ def get_connection():
         + host
         + ":5432/pckeiba"
     )
+    print(db_url)
     return psycopg2.connect(db_url)
 
 def get_race_schedule(cur):
