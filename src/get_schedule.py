@@ -88,6 +88,7 @@ def main(cur):
 
 
 if __name__ == "__main__":
+    print("start")
     with get_connection() as conn:
         with conn.cursor(cursor_factory=DictCursor) as cur:
             main(cur)
