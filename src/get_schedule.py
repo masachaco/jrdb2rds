@@ -38,6 +38,7 @@ def get_host():
         )
         host = db_host.decode().replace("\n", "")
     print(host)
+    exit(0)
     return host
 
 def get_connection():
