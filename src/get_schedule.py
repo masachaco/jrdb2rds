@@ -49,20 +49,6 @@ def get_connection():
     )
     return psycopg2.connect(db_url)
 
-def get_engine():
-
-    host = get_host()
-    connection_config = {
-        'user': 'postgres',
-        'password': 'keibadb',
-        'host': host,
-        'port': 5432,
-        'database': 'pckeiba'
-    }
-    return create_engine('postgresql://{user}:{password}@{host}:{port}/{database}'.format(**connection_config))
-
-
-
 def get_race_schedule(cur):
     cur.execute(
         f"select * from public.jvd_ys where cast(kaisai_nen as integer) >= 2000;"

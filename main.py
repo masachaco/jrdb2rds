@@ -42,19 +42,6 @@ def get_connection():
     )
     return psycopg2.connect(db_url)
 
-def get_engine():
-
-    host = get_host()
-    connection_config = {
-        'user': 'postgres',
-        'password': 'keibadb',
-        'host': host,
-        'port': 5432,
-        'database': 'pckeiba'
-    }
-    print(connection_config)
-    return create_engine('postgresql://{user}:{password}@{host}:{port}/{database}'.format(**connection_config))
-
 
 def execute_command(command):
     proc = subprocess.Popen(
