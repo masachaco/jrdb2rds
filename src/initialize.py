@@ -95,12 +95,12 @@ def main():
         # 直前情報
         {"file_type": "Tyb", "file_encode": "shift-jis", "is_schedule": "false"},
         # 調教情報
-        {"file_type": "Cha", "file_encode": "cp932", "is_schedule": "false"},
-        {"file_type": "Cyb", "file_encode": "cp932", "is_schedule": "false"},
-        # 開催データ(天候等)
-        {"file_type": "Kab", "file_encode": "cp932", "is_schedule": "true"},
-        # 競走馬データ
-        {"file_type": "Kyi", "file_encode": "cp932", "is_schedule": "false"}
+        # {"file_type": "Cha", "file_encode": "cp932", "is_schedule": "false"},
+        # {"file_type": "Cyb", "file_encode": "cp932", "is_schedule": "false"},
+        # # 開催データ(天候等)
+        # {"file_type": "Kab", "file_encode": "cp932", "is_schedule": "true"},
+        # # 競走馬データ
+        # {"file_type": "Kyi", "file_encode": "cp932", "is_schedule": "false"}
     ]
     for contents in load_contents:
         cleanup()
