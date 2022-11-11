@@ -1,8 +1,8 @@
 import subprocess
 import psycopg2
+from psycopg2.extras import DictCursor
 import sys
 from datetime import datetime
-from psycopg2.extras import DictCursor
 import json
 import yaml
 import argparse
@@ -28,6 +28,7 @@ def execute_command(command):
 
 def get_host():
     host = "10.174.0.2"
+    return "localhost"
     os_distri, stderr_data = execute_command(
         " more /etc/os-release|grep Ubuntu -o |uniq"
     )

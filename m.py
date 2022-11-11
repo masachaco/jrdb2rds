@@ -20,30 +20,18 @@ def read_file(path,encode):
         print(e)
 
 
-def get_host():
-    host = "10.174.0.2"
-    return "localhost"
-    os_distri, stderr_data = execute_command(
-        " more /etc/os-release|grep Ubuntu -o |uniq"
-    )
-    os_distri = str(os_distri.decode()).replace("\n", "").strip()
-    if os_distri.strip() == "Ubuntu":
-        db_host, stderr_data = execute_command(
-            "ip route | grep 'default via' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
-        )
-        host = db_host.decode().replace("\n", "")
-    return host
-
 def get_connection():
     # DBの接続先IPが毎回変わるので取得する
-    host = get_host()
+    db_host, stderr_data = execute_command(
+        "ip route | grep 'default via' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
+    )
+    print(db_host.decode().replace("\n", ""))
     db_url = (
         "postgresql://postgres:keibadb@"
-        + host
+        + db_host.decode().replace("\n", "")
         + ":5432/pckeiba"
     )
     return psycopg2.connect(db_url)
-
 
 def execute_command(command):
     proc = subprocess.Popen(
@@ -54,6 +42,7 @@ def execute_command(command):
         stderr=subprocess.PIPE,
     )  # 3
     return proc.communicate()  # 処理実行を待つ(†1)
+
 def get_race_schedule(cur):
     cur.execute(
         f"select * from public.jvd_ys where cast(kaisai_nen as integer) >= 2000;"
